@@ -1,0 +1,22 @@
+body {background:#FFFFFF;color:black;margin-left:50px;margin-right:50px;}
+p.fbinfo {font-family:Arial,Helvetica,sans-serif;font-size:75%;}
+p.cmpn {font-size:75%;font-weight:bold;color:#DC143C;border:0px;}
+table {border-color:#000000;padding:1px;border:1px;border-collapse:collapse}
+table.im {display:inline;border:0px;padding:0px;}
+table.clda {display:inline-table;cellpadding="1";vertical-align:bottom;}
+td {text-align:left;vertical-align:bottom;font-size:75%;border:1px solid #000000;border-style:solid;border-collapse:collapse}
+td.cmpn {font-size:50%;font-weight:bold;color:#DC143C;border:0px;}
+td.cluin {padding:1;margin:0;vertical-align:bottom;}
+td.cluecell {vertical-align:bottom}
+td.cludt {padding:0;margin:0;font-size:100%;font-weight:bold;font-family:Arial,Helvetica,sans-serif;align="right";border:none}
+td.clusz {padding:0;margin:0;font-size:100%;font-style:italic;font-family:Arial,Helvetica,sans-serif;align="right";border:none}
+td.clumw {padding:0;margin:0;font-size:100%;color:#2F4F4F;font-family:Arial,Helvetica,sans-serif;align="right";border:none}
+h1 {color:#800000;font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:bold;}
+h2 {color:#000000;font-family:Arial,Helvetica,sans-serif;font-size:18px;font-weight:bold;}
+a.clind {text-decoration:none;color:#000000;}
+a.cxref {text-decoration:none;color:#000080;}
+div.clulist {color:#000000;margin:2px;font-family:Arial,Helvetica,sans-serif;}
+p.noise {color:#000000;padding:5px;font-family:Arial,Helvetica,sans-serif;border:1px solid black;background-color:#FFB6C1;}
+p.indexp {color:#000000;padding:5px;font-family:Arial,Helvetica,sans-serif;border:1px solid black;background-color:#FFE4E1;}
+p.simil {align:right;color:#8B0000;font-family:Arial,Helvetica,sans-serif;}
+p.datanote {align:right;font-family:Arial,Helvetica,sans-serif;font-size:75%;}
