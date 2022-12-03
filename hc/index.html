@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HistCorp - Historical Corpora and Tools</title>
+<link rel="stylesheet" type="text/css" href="css/style_2.css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="css/jquery-1.12.4.js"></script>
+  <script src="css/jquery-ui.js"></script>
+  <script>
+    $( function() {
+    $("#accordion").accordion({ header: "h3", collapsible: true, active: false, heightStyle: 'content' });
+  } );
+  </script>
+    <script src="src/sorttable.js"></script>
+</head>
+ 
+<body>
+  <style>
+      table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
+	  content: " \25B4\25BE" 
+      }
+    </style>
+
+<a href="https://cl.lingfil.uu.se/decode/" target="_blank"><img src="decrypt-trans.png" height="110" width="110" style="float:left; margin-left:10px;"></a>
+<a href="http://www.uu.se" target="_blank"><img src="UU_logo_tranp-red.png" height="125" width="125" style="float:right;"></a>
+<center><span style="position:relative; top:40px; font-size:64px; color:#312c32; font-family: 'Lusitana', serif;">Hist<span style="color:#e62739; font-family: 'Lusitana', serif;">CORP</span></center>
+<div style="padding:15px; font-size:13px;">
+<br/>
+  <hr style="margin-top:24px;">
+<center><a href="index.html">Historical Corpora</a> | <a href="langmodels.html">Language Models</a> | <a href="tools.html">Tools</a> </center>
+
+<h1>Historical Corpora</h1>
+<p>
+  On this page, we gather a wide range of historical corpora and other useful resources and tools for researchers working with historical text.  If you use the resources provided on this page in your research, we would be very happy if you refer to the following paper:<br/><br/>
+  Eva Pettersson and Beáta Megyesi (2018)<br/>
+The HistCorp Collection of Historical Corpora and Resources.<br/>
+In <i>Proceedings of the Digital Humanities in the Nordic Countries 3rd Conference</i>, Helsinki, Finland, March 7-9, 2018. [<a href="https://uu.diva-portal.org/smash/get/diva2:1205788/FULLTEXT01.pdf" target="_blank">pdf</a>]
+  </p>
+
+</p>
+
+<p>
+  In the table below, you may download historical corpora for fourteen different languages. For more information about these language-specific corpora, and for download, click on the name of the language of interest to you. All resources hereunder are provided on a "AS-IS", “WHEREIS,” and “WITH ALL FAULTS” basis, without warranty of any kind, expressed or implied. 
+</p>
+
+<p>
+  Language models derived from these corpora may be downloaded from the <a href="langmodels.html">Language Models</a> section of this page. There you may also create your own language models, by uploading files of your choice.
+</p>
+
+<p>
+Furthermore, some useful tools for processing historical text are found in the <a href="tools.html">Tools</a> section of this page.
+</p>
+
+
+<p>
+  <font color="red">Latest News:</font> (all updates are listed in <a href="archive.html">the archive</a>)
+  <ul>
+    <li>September 21, 2021: The dictionary <a href="https://spraakbanken.gu.se/resurser/swedberg" target=_blank>Swensk Ordabok</a> by Jesper Swedberg was added</li>
+    <li>September 21, 2021: The dictionary <a href="https://spraakbanken.gu.se/resurser/schlyter" target=_blank>Ordbok över svenska medeltidsspråket</a> by Schlyter was added</li>
+    <li>September 20, 2021: The dictionary <a href="https://spraakbanken.gu.se/resurser/dalin" target=_blank>Ordbok Öfver svenska språket</a> by Dalin was added</li>
+    <li>September 13, 2021: The dictionary <a href="https://www.clarin.si/repository/xmlui/handle/11356/1127#" target=_blank>Words of the 16th-Century Slovenian Literary Language</a> was added</li>
+  </ul>
+</p>
+
+<h2>Download Historical Corpora</h2>
+  
+  <div id="accordion">
+  <h3>Czech</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Czech:
+      <ul>
+	<li>Medieval Charter Sections Corpus (charters)</li>
+	<li>The diachronic section of the Czech National Corpus (DIAKORP)</li>
+	<li>Selection of books from the Gutenberg Project (Gutenberg)</li>
+      </ul>
+      <br/>
+
+    <table style="border-spacing: 10px 0" width=100% class="sortable">
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td>
+	<td style="border-bottom: 1px solid"><b>Time Period</b></td>
+	<td style="border-bottom: 1px solid"><b>Genre(s)</b></td>
+	<td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td>
+	<td style="border-bottom: 1px solid" align="center"><b>Source</b></td>
+	<td style="border-bottom: 1px solid" align="center"><b>Licence</b></td>
+	<td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+  <td><i>charters</i></td><td>1310&ndash;1346</td><td>charters</td><td align="center">[<a href="czech/czech-charters-txt.zip">txt</a>]</td><td align="center">[<a href="czech/czech-charters-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="czech/czech-charters-anno.zip">xml</a>]</td><td align="center">[<a href="czech/czech-charters-all.zip">all</a>]</td> <td align="center"><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1952" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="czech/czech-readme-charters" target="_blank">readme</a>]</td>	
+      </tr>
+
+      <tr>
+	<td><i>DIAKORP</i></td><td>1350&ndash;1939</td><td>mixed</td><td align="center">[<a href="czech/czech-diakorp-txt.zip">txt</a>]</td><td align="center">[<a href="czech/czech-diakorp-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="czech/czech-diakorp-all.zip">all</a>]</td> <td align="center"><a href="https://wiki.korpus.cz/doku.php/en:cnk:diakorp" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="czech/czech-readme-diakorp" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>Gutenberg</i></td><td>1890&ndash;1897</td><td>fiction</td><td align="center">[<a href="czech/czech-gutenberg-txt.zip">txt</a>]</td><td align="center">[<a href="czech/czech-gutenberg-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="czech/czech-gutenberg-all.zip">all</a>]</td> <td align="center"><a href="http://www.gutenberg.org/" target="_blank">www</a></td> <td align="center"><a href="http://www.gutenberg.org/license" target="_blank">www</a></td><td align="center">[<a href="czech/czech-readme-gutenberg" target="_blank">readme</a>]</td>
+      </tr>
+</table>
+
+<p>You may also download all Czech corpora files (including readme files) here: <a href="czech/all-czech-corpora.zip">all-czech-corpora.zip</a></p>
+
+</p>
+  </div>
+  
+  <h3>Dutch</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Dutch:
+      <ul>
+	<li>Brieven als Buit, BaB (not available for download, but included in the language models)</li>
+	<li>The EDGeS Diachronic Bible Corpus (EDGeS)</li>
+	<li>Selection of books from the Gutenberg Project (Gutenberg)</li>
+	<li>The Compilation Corpus Historical Dutch (Compilation)</li>
+      </ul>
+      <br/>
+
+      <table style="border-spacing: 5px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+	<td><i>BaB</i></td><td align="center">1661&ndash;1783</td><td>letters</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td> <td align="center"><a href="https://taalmaterialen.ivdnt.org/download/tstc-bab-gouden-standaard/" target="_blank">www</a></td><td align="center"><a href="https://taalmaterialen.ivdnt.org/registreren/" target="_blank">register</a></td><td align="center">[<a href="dutch/dutch-readme-BaB" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>EDGeS</i></td><td>1360&ndash;1939</td><td>bible</td><td align="center">[<a href="dutch/dutch-edges-txt.zip">txt</a>]</td><td align="center">[<a href="dutch/dutch-edges-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="dutch/dutch-edges-anno.zip">txt</a>]</td><td align="center">[<a href="dutch/dutch-edges-all.zip">all</a>]</td> <td align="center"><a href="https://spraakbanken.gu.se/en/resources/openedges" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="dutch/dutch-readme-edges" target="_blank">readme</a>]</td>
+      </tr>
+
+      <tr>
+	<td><i>Gutenberg</i></td><td>14nn&ndash;1875</td><td>fiction</td><td align="center">[<a href="dutch/dutch-gutenberg-txt.zip">txt</a>]</td><td align="center">[<a href="dutch/dutch-gutenberg-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="dutch/dutch-gutenberg-all.zip">all</a>]</td> <td align="center"><a href="http://www.gutenberg.org/" target="_blank">www</a></td> <td align="center"><a href="http://www.gutenberg.org/license" target="_blank">www</a></td><td align="center">[<a href="dutch/dutch-readme-gutenberg" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>Compilation</i></td><td>1236&ndash;1938</td><td>chancellery, narrative</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td> <td align="center"><a href="http://www.eviecousse.be/compilationcorpus.htm" target="_blank">www</a></td> <td align="center">Free for research</td><td align="center">[<a href="dutch/dutch-readme-compilatie" target="_blank">readme</a>]</td>
+      </tr>
+</table>
+
+<p>You may also download all Dutch corpora files (including readme files) here: <a href="dutch/all-dutch-corpora.zip">all-dutch-corpora.zip</a></p>
+
+</p>
+  </div>
+
+      <h3>English</h3>
+      <div>
+	<p>
+      The following corpora are currently available for historical English:
+      <ul>
+	<li>The Corpus of Late Modern English Texts, version 3.1 (CLMET)</li>
+	<li>The EDGeS Diachronic Bible Corpus (EDGeS)</li>
+	<li>The Lampeter Corpus of Early Modern English Tracts (lampeter)</li>
+      </ul>
+      <br/>
+    
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+      <tr>
+	<td><i>CLMET</i></td><td>1710&ndash;1920</td><td>mixed</td><td align="center">[<a href="english/english-CLMET-txt.zip">txt</a>]</td><td align="center">[<a href="english/english-CLMET-tok.zip">tok</a>]</td><td align="center">&mdash;</td><!--<td align="center">[<a href="english/english-CLMET-pos.zip">txt</a>]</td>--><td align="center">[<a href="english/english-CLMET-anno.zip">txt</a>]</td><td align="center">[<a href="english/english-CLMET-all.zip">all</a>]</td> <td align="center"><a href="http://fedora.clarin-d.uni-saarland.de/clmet/clmet.html" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="english/english-readme-CLMET" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>EDGeS</i></td><td>1395&ndash;1890</td><td>bible</td><td align="center">[<a href="english/english-edges-txt.zip">txt</a>]</td><td align="center">[<a href="english/english-edges-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="english/english-edges-anno.zip">txt</a>]</td><td align="center">[<a href="english/english-edges-all.zip">all</a>]</td> <td align="center"><a href="https://spraakbanken.gu.se/en/resources/openedges" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="english/english-readme-edges" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>lampeter</i></td><td>1640&ndash;1740</td><td>tracts</td><td align="center">[<a href="english/english-lampeter-txt.zip">txt</a>]</td><td align="center">[<a href="english/english-lampeter-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="english/english-lampeter-all.zip">all</a>]</td> <td align="center"><a href="http://ota.ox.ac.uk/desc/2400" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">www</a></td><td align="center">[<a href="english/english-readme-lampeter" target="_blank">readme</a>]</td>
+      </tr>
+
+</table>
+
+<p>You may also download all English corpora files (including readme files) here: <a href="english/all-english-corpora.zip">all-english-corpora.zip</a></p>
+
+</p>
+  </div>
+
+
+<!--  <h3>Finnish</h3>
+  <div>
+    <p>
+
+    </p>
+  </div>
+-->
+  <h3>French</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical French:
+      <ul>
+	<li>Paris speech in the past (Paris)</li>
+	<li>Syntactic Reference Corpus of Medieval French (SRCMF)</li>
+      </ul>
+      <br/>
+
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+	<td><i>Paris</i></td><td>1296&ndash;1790</td><td>vernacular speech, tax-rolls</td><td align="center">[<a href="french/french-paris-txt.zip">txt</a>]</td><td align="center">[<a href="french/french-paris-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="french/french-paris-all.zip">all</a>]</td> <td align="center"><a href="http://ota.ox.ac.uk/desc/2423" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">www</a></td><td align="center">[<a href="french/french-readme-paris" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>SRCMF</i></td><td>842&ndash;1325</td><td>&mdash;</td><td align="center">[<a href="french/french-srcmf-txt.zip">txt</a>]</td><td align="center">[<a href="french/french-srcmf-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="french/french-srcmf-anno.zip">conll</a>]</td><td align="center">[<a href="french/french-srcmf-all.zip">all</a>]</td> <td align="center"><a href="https://github.com/UniversalDependencies/UD_Old_French-SRCMF" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">www</a></td><td align="center">[<a href="french/french-readme-srcmf" target="_blank">readme</a>]</td>
+      </tr>
+</table>
+
+<p>You may also download all French corpora files (including readme files) here: <a href="french/all-french-corpora.zip">all-french-corpora.zip</a></p>
+
+</p>
+  </div>
+  
+  <h3>German</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical German:
+      <ul>
+	<li>Deutsches TextArchiv (DTA)</li>
+	<li>The EDGeS Diachronic Bible Corpus (EDGeS)</li>
+	<li>The Nottingham Corpus of Early Modern German Midwifery and Women's Medicine (GeMi)</li>
+	<li>GerManC</li>
+	<li>German Literary History (LitHist)</li>
+<!--	<li>Parsed Corpus of Early New High German (PCENHG)</li>-->
+	<li>Reference Corpus of Middle High German (ReM)</li>
+	<li>Reference Corpus of Middle Low German/Low Rhenish (ReN)</li>
+	<li>Register in Diachronic German Science (Ridges)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>DTA</i></td><td>1600&ndash;1899</td><td>mixed</td><td align="center">[<a href="german/german-dta-txt.zip">txt</a>]</td><td align="center">[<a href="german/german-dta-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="german/german-dta-all.zip">all</a>]</td> <td align="center"><a href="http://www.deutschestextarchiv.de/download" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc/3.0/" target="_blank">www</a></td><td align="center">[<a href="german/german-readme-dta" target="_blank">readme</a>]</td>
+      </tr>
+
+<tr>
+  <td><i>EDGeS</i></td><td>1460&ndash;1871</td><td>bible</td><td align="center">[<a href="german/german-edges-txt.zip">txt</a>]</td><td align="center">[<a href="german/german-edges-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="german/german-edges-anno.zip">txt</a>]</td><td align="center">[<a href="german/german-edges-all.zip">all</a>]</td> <td align="center"><a href="https://spraakbanken.gu.se/en/resources/openedges" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="german/german-readme-edges" target="_blank">readme</a>]</td>
+      </tr>
+
+      <tr>
+  <td><i>GeMi</i></td><td>1500&ndash;1690</td><td>medicine</td><td align="center">[<a href="german/german-GeMi-txt.zip">txt</a>]</td><td align="center">[<a href="german/german-GeMi-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="german/german-GeMi-all.zip">all</a>]</td> <td align="center"><a href="https://ota.bodleian.ox.ac.uk/repository/xmlui/handle/20.500.12024/2562" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-nc-sa/3.0" target="_blank">www</a></td><td align="center">[<a href="german/german-readme-GeMi" target="_blank">readme</a>]</td>
+      </tr>
+
+      <tr>
+	<td><i>GerManC</i></td><td>1654&ndash;1799</td><td>mixed</td><td align="center">[<a href="german/german-GerManC-txt.zip">txt</a>]</td><td align="center">[<a href="german/german-GerManC-tok.zip">tok</a>]</td><td align="center">
+	  <!--	  [<a href="german/german-GerManC-norm.zip">txt</a>]-->
+	  &mdash;
+	</td><td align="center">[<a href="german/german-GerManC-anno.zip">conll</a>]</td><td align="center">[<a href="german/german-GerManC-all.zip">all</a>]</td> <td align="center"><a href="http://ota.ox.ac.uk/desc/2544" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">www</a></td><td align="center">[<a href="german/german-readme-GerManC" target="_blank">readme</a>]</td>
+      </tr>
+
+      <tr>
+	<td><i>LitHist</i></td>
+	<td>1790&ndash;1829</td>
+	<td>literature</td>
+	<td align="center">[<a href="german/german-lithist-txt.zip">txt</a>]</td>
+	<td align="center">[<a href="german/german-lithist-tok.zip">tok</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="german/german-lithist-anno.zip">conll</a>]</td>
+	<td align="center">[<a href="german/german-lithist-all.zip">all</a>]</td>
+	<td align="center"><a href="https://github.com/UniversalDependencies/UD_German-LIT/blob/master/README.md" target="_blank">www</a></td>
+	<td align="center"><a href="http://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">www</a></td>	
+	<td align="center">[<a href="german/german-readme-lithist" target="_blank">readme</a>]</td>
+      </tr>
+      
+      <tr>
+	<td><i>ReM</i></td><td>1050&ndash;1350</td><td>mixed</td><td align="center">[<a href="german/german-ReM-txt.zip">txt</a>]</td><td align="center">[<a href="german/german-ReM-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="german/german-ReM-anno.zip">xml</a>]</td><td align="center">[<a href="german/german-ReM-all.zip">all</a>]</td> <td align="center"><a href="https://www.linguistics.rub.de/rem/" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="german/german-readme-ReM" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>ReN</i></td><td>1200&ndash;1650</td><td>mixed</td><td align="center">[<a href="german/german-ReN-txt.zip">txt</a>]</td><td align="center">[<a href="german/german-ReN-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="german/german-ReN-anno.zip">xml</a>]</td><td align="center">[<a href="german/german-ReN-all.zip">all</a>]</td> <td align="center"><a href="https://corpora.uni-hamburg.de/hzsk/de/islandora/object/text-corpus:ren-1.0" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">www</a></td><td align="center">[<a href="german/german-readme-ReN" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+    	<td><i>Ridges</i></td><td>1482&ndash;1914</td><td>science</td><td align="center">[<a href="german/german-ridges-txt.zip">txt</a>]</td><td align="center">[<a href="german/german-ridges-tok.zip">tok</a>]</td><td align="center">[<a href="german/german-ridges-norm.zip">txt</a>]</td><td align="center">[<a href="german/german-ridges-anno.zip">conll</a>]</td><td align="center">[<a href="german/german-ridges-all.zip">all</a>]</td> <td align="center"><a href="https://www.linguistik.hu-berlin.de/en/institut-en/professuren-en/korpuslinguistik/research/ridges-projekt" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">www</a></td><td align="center">[<a href="german/german-readme-ridges" target="_blank">readme</a>]</td>
+      </tr>
+</table>
+
+<p>You may also download all German corpora files (including readme files) here: <a href="german/all-german-corpora.zip">all-german-corpora.zip</a></p>
+
+</p>
+  </div>
+
+    <h3>Greek</h3>
+  <div>
+      The following corpora are currently available for Greek:
+      <ul>
+	<li>Ancient Greek and Latin Dependency Treebank (AGLDT)</li>
+	<li>Perseus Digital Library (Perseus)</li>
+	<li>Proiel Treebank (Proiel)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>AGLDT</i></td><td align="center">&mdash;</td><td>mixed</td><td align="center">[<a href="greek/greek-AGLDT-txt.zip">txt</a>]</td><td align="center">[<a href="greek/greek-AGLDT-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="greek/greek-AGLDT-anno.zip">xml</a>]</td><td align="center">[<a href="greek/greek-AGLDT-all.zip">all</a>]</td> <td align="center"><a href="https://perseusdl.github.io/treebank_data/" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-sa/3.0/us/" target="_blank">www</a></td><td align="center">[<a href="greek/greek-readme-AGLDT" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>Perseus</i></td><td align="center">&mdash;</td><td>mixed</td><td align="center">[<a href="greek/greek-perseus-txt.zip">txt</a>]</td><td align="center">[<a href="greek/greek-perseus-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="greek/greek-perseus-all.zip">all</a>]</td> <td align="center"><a href="http://www.perseus.tufts.edu/hopper/" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-sa/3.0/us/" target="_blank">www</a></td><td align="center">[<a href="greek/greek-readme-perseus" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>Proiel</i></td><td align="center">&mdash;</td><td>mixed</td><td align="center">[<a href="greek/greek-proiel-txt.zip">txt</a>]</td><td align="center">[<a href="greek/greek-proiel-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="greek/greek-proiel-anno.zip">conll</a>]</td><td align="center">[<a href="greek/greek-proiel-all.zip">all</a>]</td> <td align="center"><a href="https://proiel.github.io/" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="greek/greek-readme-proiel" target="_blank">readme</a>]</td>
+      </tr>
+
+</table>
+    <p>You may also download all Greek corpora files (including readme files) here: <a href="greek/all-greek-corpora.zip">all-greek-corpora.zip</a></p>
+
+
+</p>
+  </div>
+  
+  <h3>Hungarian</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Hungarian:
+      <ul>
+	<li>Hungarian Generative Diachronic Syntax (HGDS)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>HGDS</i></td><td>1440&ndash;1539</td><td>codices</td><td align="center">[<a href="hungarian/hungarian-HGDS-txt.zip">txt</a>]</td><td align="center">[<a href="hungarian/hungarian-HGDS-tok.zip">tok</a>]</td><td align="center">[<a href="hungarian/hungarian-HGDS-norm.zip">txt</a>]</td><td align="center">[<a href="hungarian/hungarian-HGDS-anno.zip">conll</a>]</td><td align="center">[<a href="hungarian/hungarian-HGDS-all.zip">all</a>]</td> <td align="center"><a href="http://omagyarkorpusz.nytud.hu/en-codices.html" target="_blank">www</a></td><td align="center">free</td><td align="center">[<a href="hungarian/hungarian-readme-HGDS" target="_blank">readme</a>]</td>
+      </tr>
+    </table>
+    </p>
+  </div>
+
+  <h3>Icelandic</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Icelandic:
+      <ul>
+	<li>Icelandic Parsed Historical Corpus (IcePaHC)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>IcePaHC</i></td><td>1150&ndash;2008</td><td>mixed</td>
+  <td align="center">[<a href="icelandic/icelandic-icepahc-txt.zip">txt</a>]</td>
+  <td align="center">[<a href="icelandic/icelandic-icepahc-tok.zip">tok</a>]</td>
+  <td align="center">[<a href="icelandic/icelandic-icepahc-norm.zip">txt</a>]</td>
+  <td align="center">[<a href="icelandic/icelandic-icepahc-anno.zip">txt</a>]</td>
+  <td align="center">[<a href="icelandic/icelandic-icepahc-all.zip">all</a>]</td>
+  <td align="center"><a href="http://www.linguist.is/icelandic_treebank/Icelandic_Parsed_Historical_Corpus_(IcePaHC)" target="_blank">www</a></td>
+  <td align="center"><a href="https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License" target="_blank">www</a></td>
+  <td align="center">[<a href="icelandic/icelandic-readme-icepahc" target="_blank">readme</a>]</td>
+      </tr>
+
+</table>
+</p>
+
+  </div>
+  
+  <h3>Italian</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Italian:
+      <ul>
+	<li>Selection of books from the Gutenberg Project</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>Gutenberg</i></td><td>1300&ndash;1897</td><td>books</td><td align="center">[<a href="italian/italian-gutenberg-txt.zip">txt</a>]</td><td align="center">[<a href="italian/italian-gutenberg-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="italian/italian-gutenberg-all.zip">all</a>]</td> <td align="center"><a href="http://www.gutenberg.org/" target="_blank">www</a></td> <td align="center"><a href="http://www.gutenberg.org/license" target="_blank">www</a></td><td align="center">[<a href="italian/italian-readme-gutenberg" target="_blank">readme</a>]</td>
+      </tr>
+    </table>
+
+<!--    <p>You may also download all Italian corpora files (including readme files) here: <a href="italian/all-italian-corpora.zip">all-italian-corpora.zip</a></p>-->
+
+    </p>
+  </div>
+
+  <h3>Latin</h3>
+  <div>
+      The following corpora are currently available for Latin:
+      <ul>
+	<li>Ancient Greek and Latin Dependency Treebank (AGLDT)</li>
+	<li>Medieval Charter Sections Corpus (charters)</li>
+	<li>Corpus Corporum (not available for download, but included in the language models)</li>
+	<li>Late Latin Charter Treebank 1 (LLCT1)</li>
+	<li>Late Latin Charter Treebank 2 (LLCT2)</li>
+	<li>Perseus Digital Library (Perseus)</li>
+	<li>Proiel Treebank (Proiel)</li>
+	<li>Index Thomisticus Treebank (Thomisticus)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>AGLDT</i></td><td align="center">&mdash;</td><td>mixed</td><td align="center">[<a href="latin/latin-AGLDT-txt.zip">txt</a>]</td><td align="center">[<a href="latin/latin-AGLDT-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="latin/latin-AGLDT-anno.zip">xml</a>]</td><td align="center">[<a href="latin/latin-AGLDT-all.zip">all</a>]</td> <td align="center"><a href="https://perseusdl.github.io/treebank_data/" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-sa/3.0/us/" target="_blank">www</a></td><td align="center">[<a href="latin/latin-readme-AGLDT" target="_blank">readme</a>]</td>
+      </tr>
+<tr>
+  <td><i>charters</i></td><td align="center">1310&ndash;1346</td><td>charters</td><td align="center">[<a href="latin/latin-charters-txt.zip">txt</a>]</td><td align="center">[<a href="latin/latin-charters-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="latin/latin-charters-anno.zip">txt</a>]</td><td align="center">[<a href="latin/latin-charters-all.zip">all</a>]</td> <td align="center"><a href="https://lindat.mff.cuni.cz/repository/xmlui/handle/11234/1-1952" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="latin/latin-readme-charters" target="_blank">readme</a>]</td>
+</tr>
+<tr>
+  <td><i>Corpus Corporum</i></td><td align="center">100&ndash;1200</td><td>mixed</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td> <td align="center"><a href="http://www.mlat.uzh.ch/MLS/" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="latin/latin-readme-corporum" target="_blank">readme</a>]</td>
+      </tr>
+<tr>
+      <td><i>LLCT1</i></td><td align="center">&ndash;</td><td>charters</td><td align="center">[<a href="latin/latin-LLCT1-txt.zip">txt</a>]</td><td align="center">[<a href="latin/latin-LLCT1-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="latin/latin-LLCT1-all.zip">all</a>]</td> <td align="center"><a href="https://zenodo.org/record/3633607#.X0PF15MzbDJ" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">www</a></td><td align="center">[<a href="latin/latin-readme-LLCT1" target="_blank">readme</a>]</td>
+</tr>
+
+<tr>
+      <td><i>LLCT2</i></td><td align="center">&ndash;</td><td>charters</td><td align="center">[<a href="latin/latin-LLCT2-txt.zip">txt</a>]</td><td align="center">[<a href="latin/latin-LLCT2-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="latin/latin-LLCT2-anno.zip">conll</a>]</td><td align="center">[<a href="latin/latin-LLCT2-all.zip">all</a>]</td> <td align="center"><a href="https://zenodo.org/record/3633614#.X0PUCJMzbDJ" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by/4.0/legalcode" target="_blank">www</a></td><td align="center">[<a href="latin/latin-readme-LLCT2" target="_blank">readme</a>]</td>
+</tr>
+
+      <tr>
+	<td><i>Perseus</i></td><td align="center">&ndash;</td><td>mixed</td><td align="center">[<a href="latin/latin-perseus-txt.zip">txt</a>]</td><td align="center">[<a href="latin/latin-perseus-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="latin/latin-perseus-all.zip">all</a>]</td> <td align="center"><a href="http://www.perseus.tufts.edu/hopper/" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-sa/3.0/us/" target="_blank">www</a></td><td align="center">[<a href="latin/latin-readme-perseus" target="_blank">readme</a>]</td>
+      </tr>
+      <td><i>Proiel</i></td><td align="center">&ndash;</td><td>mixed</td><td align="center">[<a href="latin/latin-proiel-txt.zip">txt</a>]</td><td align="center">[<a href="latin/latin-proiel-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="latin/latin-proiel-anno.zip">conll</a>]</td><td align="center">[<a href="latin/latin-proiel-all.zip">all</a>]</td> <td align="center"><a href="https://proiel.github.io/" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="latin/latin-readme-proiel" target="_blank">readme</a>]</td>
+</tr>
+<tr>
+	<td><i>Thomisticus</i></td><td align="center">1225&ndash;1274</td><td>mixed</td><td align="center">[<a href="latin/latin-thomisticus-txt.zip">txt</a>]</td><td align="center">[<a href="latin/latin-thomisticus-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="latin/latin-thomisticus-anno.zip">conll</a>]</td><td align="center">[<a href="latin/latin-thomisticus-all.zip">all</a>]</td> <td align="center"><a href="https://itreebank.marginalia.it/view/ittb.php" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">www</a></td><td align="center">[<a href="latin/latin-readme-thomisticus" target="_blank">readme</a>]</td>
+</tr>
+</table>
+    <p>You may also download all Latin corpora files (including readme files) here: <a href="latin/all-latin-corpora.zip">all-latin-corpora.zip</a></p>
+
+    </p>
+
+  </div>
+
+  <h3>Polish</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Polish:
+      <ul>
+	<li>Middle Polish Diachrone Lemmatised Corpus (PolDiLemma)</li>
+      </ul>
+      <br/>
+      <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>PolDiLemma</i></td><td>1567&ndash;1800</td><td>mixed</td><td align="center">[<a href="polish/polish-PolDiLemma-txt.zip">txt</a>]</td><td align="center">[<a href="polish/polish-PolDiLemma-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="polish/polish-PolDiLemma-anno.zip">txt</a>]</td><td align="center">[<a href="polish/polish-PolDiLemma-all.zip">all</a>]</td> <td align="center"><a href="http://fedora.clarin-d.uni-saarland.de/poldilemma/" target="_blank">www</a></td><td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td><td align="center">[<a href="polish/polish-readme-PolDiLemma" target="_blank">readme</a>]</td>
+	
+      </tr>
+    </table>
+<!--    <p>You may also download all Polish corpora files (including readme files) here: <a href="polish/all-polish-corpora.zip">all-polish-corpora.zip</a></p>-->
+
+    </p>
+  </div>
+  
+
+  <h3>Portuguese</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Portuguese:
+      <ul>
+	<li>Tycho Brahe Parsed Corpus of Historical Portuguese (Tycho)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>Tycho</i></td><td>1380&ndash;1881</td><td>mixed</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">&mdash;</td> <td align="center"><a href="http://www.tycho.iel.unicamp.br/corpus/en/" target="_blank">www</a></td><td align="center"><a href="http://www.tycho.iel.unicamp.br/corpus/en/termos.html" target="_blank">www</a></td><td align="center">[<a href="portuguese/portuguese-readme-tycho" target="_blank">readme</a>]</td>
+  <!--  <td><i>Tycho</i></td><td>1380&ndash;1881</td><td>mixed</td><td align="center">[<a href="portuguese/portuguese-tycho-txt.zip">txt</a>]</td><td align="center">[<a href="portuguese/portuguese-tycho-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="portuguese/portuguese-tycho-tagged.zip">txt</a>]</td><td align="center">[<a href="portuguese/portuguese-tycho-parsed.zip">txt</a>]</td><td align="center">[<a href="portuguese/portuguese-readme-tycho" target="_blank">readme</a>]</td><td align="center">[<a href="portuguese/portuguese-tycho-all.zip">all</a>]</td> <td align="center"><a href="http://www.tycho.iel.unicamp.br/corpus/en/" target="_blank">www</a></td><td align="center">free for research</td>	-->
+      </tr>
+    </table>
+
+<!--    <p>You may also download all Spanish corpora files (including readme files) here: <a href="spanish/all-spanish-corpora.zip">all-spanish-corpora.zip</a></p>-->
+
+    </p>
+  </div>
+
+  <h3>Russian</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Russian:
+      <ul>
+	<li>Middle Russian Corpus (RNC)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>RNC</i></td><td align="center">&mdash;</td><td align="center">&mdash;</td><td align="center">[<a href="russian/russian-rnc-txt.zip">txt</a>]</td><td align="center">[<a href="russian/russian-rnc-tok.zip">tok</a>]</td><td align="center">&mdash;</td><td align="center">[<a href="russian/russian-rnc-anno.zip">conll</a>]</td><td align="center">[<a href="russian/russian-rnc-all.zip">all</a>]</td> <td align="center"><a href="https://github.com/UniversalDependencies/UD_Old_Russian-RNC/blob/master/README.md" target="_blank">www</a></td><td align="center"><a href="http://creativecommons.org/licenses/by-sa/4.0/legalcode" target="_blank">www</a></td><td align="center">[<a href="russian/russian-readme-rnc" target="_blank">readme</a>]</td>	
+      </tr>
+    </table>
+    </p>
+  </div>
+
+    <h3>Slovene</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Slovene:
+      <ul>
+	<li>Words of the 16th-Century Slovenian Literary Language (besedje)</li>
+	<li>Digital Library (DigLib)</li>
+	<li>Reference corpus of historical Slovene (RefCorpus)</li>
+	<li>Lexicon of historical Slovene (lex)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>besedje</i></td><td>1550&ndash;1603</td>
+  <td>lexicon</td>
+  <td align="center">[<a href="slovene/slovene-Besedje-txt.zip">txt</a>]</td>
+  <td align="center">&mdash;</td>
+  <td align="center">&mdash;</td>
+  <td align="center">[<a href="slovene/slovene-Besedje-anno.zip">xml</a>]</td>
+  <td align="center">[<a href="slovene/slovene-Besedje-all.zip">all</a>]</td>
+  <td align="center"><a href="https://www.clarin.si/repository/xmlui/handle/11356/1127#" target="_blank">www</a></td>
+  <td align="center"><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">www</a></td>
+  <td align="center">[<a href="slovene/slovene-readme-besedje" target="_blank">readme</a>]</td>
+      </tr>
+<tr>
+  <td><i>DigLib</i></td><td>1584&ndash;1918</td>
+  <td>mixed</td><td align="center">[<a href="slovene/slovene-DigLib-txt.zip">txt</a>]</td>
+  <td align="center">[<a href="slovene/slovene-DigLib-tok.zip">tok</a>]</td>
+  <td align="center">&mdash;</td>
+  <td align="center">[<a href="slovene/slovene-DigLib-anno.zip">txt</a>]</td>
+  <td align="center">[<a href="slovene/slovene-DigLib-all.zip">all</a>]</td>
+  <td align="center"><a href="http://nl.ijs.si/imp/index-en.html" target="_blank">www</a></td>
+  <td align="center"><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">www</a></td>
+  <td align="center">[<a href="slovene/slovene-readme-DigLib" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>RefCorpus</i></td><td>1584&ndash;1899</td>
+	<td>mixed</td><td align="center">[<a href="slovene/slovene-RefCorpus-txt.zip">txt</a>]</td>
+	<td align="center">[<a href="slovene/slovene-RefCorpus-tok.zip">tok</a>]</td>
+	<td align="center">[<a href="slovene/slovene-RefCorpus-norm.zip">txt</a>]</td>
+	<td align="center">[<a href="slovene/slovene-RefCorpus-anno.zip">txt</a>]</td>
+	<td align="center">[<a href="slovene/slovene-RefCorpus-all.zip">all</a>]</td>
+	<td align="center"><a href="http://nl.ijs.si/imp/index-en.html" target="_blank">www</a></td>
+	<td align="center"><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">www</a></td>	
+	<td align="center">[<a href="slovene/slovene-readme-RefCorpus" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>lex</i></td><td>1584&ndash;1918</td>
+	<td>lexicon</td><td align="center">[<a href="slovene/slovene-lex.zip">txt</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center"><a href="http://nl.ijs.si/imp/index-en.html" target="_blank">www</a></td>
+	<td align="center"><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">www</a></td>	
+	<td align="center">[<a href="slovene/slovene-readme-lex" target="_blank">readme</a>]</td>
+      </tr>
+    </table>
+
+    <p>You may also download all Slovene corpora files (including readme files) here: <a href="slovene/all-slovene-corpora.zip">all-slovene-corpora.zip</a></p>
+
+    </p>
+  </div>
+
+
+  <h3>Spanish</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Spanish:
+      <ul>
+	<li>IMPACT-es diachronic corpus, BVC-section (IMPACT BVC)</li>
+	<li>IMPACT-es diachronic corpus, GT-section (IMPACT GT)</li>
+      </ul>
+      <br/>
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+</tr>
+<tr>
+  <td><i>IMPACT BVC</i></td>
+  <td>1481&ndash;1962</td><td>mixed</td>
+  <td align="center">[<a href="spanish/spanish-impact-BVC-txt.zip">txt</a>]</td>
+  <td align="center">[<a href="spanish/spanish-impact-BVC-tok.zip">tok</a>]</td>
+  <td align="center">[<a href="spanish/spanish-impact-BVC-norm.zip">txt</a>]</td>
+  <td align="center">&mdash;</td>
+  <td align="center">[<a href="spanish/spanish-impact-BVC-all.zip">all</a>]</td>
+  <td align="center"><a href="https://www.digitisation.eu/tools-resources/language-resources/impact-es/" target="_blank">www</a></td>
+  <td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">www</a></td>	
+  <td align="center">[<a href="spanish/spanish-readme-impact-BVC" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>IMPACT GT</i></td>
+	<td>1543&ndash;1748</td>
+	<td>mixed</td>
+	<td align="center">[<a href="spanish/spanish-impact-GT-txt.zip">txt</a>]</td>
+	<td align="center">[<a href="spanish/spanish-impact-GT-tok.zip">tok</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="spanish/spanish-impact-GT-all.zip">all</a>]</td>
+	<td align="center"><a href="https://www.digitisation.eu/tools-resources/language-resources/impact-es/" target="_blank">www</a></td>
+	<td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">www</a></td>	
+	<td align="center">[<a href="spanish/spanish-readme-impact-GT" target="_blank">readme</a>]</td>
+      </tr>
+    </table>
+
+    <p>You may also download all Spanish corpora files (including readme files) here: <a href="spanish/all-spanish-corpora.zip">all-spanish-corpora.zip</a></p>
+
+    </p>
+  </div>
+
+  <h3>Swedish</h3>
+  <div>
+    <p>
+      The following corpora are currently available for historical Swedish:
+      <ul>
+	<li>Dalin's 19th Century Swedish Dictionary (Dalin)</li>
+	<li>The EDGeS Diachronic Bible Corpus (EDGeS)</li>
+	<li>Fornsvenska Textbanken (Fornsvenska)</li>
+	<li>Selection of books from the Gutenberg Project (Gutenberg)</li>
+	<li>Texts from the Gender and Work project (GaW)</li>
+	<li>Protocols from the Academic Consistory of Uppsala University (Konsistoriet)</li>
+	<li>Schlyter's Medieval Swedish Dictionary (Schlyter)</li>
+	<li>Swensk Ordabok by Jesper Swedberg (Swedberg)</li>
+      </ul>
+      <br/>
+
+    <table style="border-spacing: 10px 0" width=100%>
+      <tr>
+	<td style="border-bottom: 1px solid"><b>Name</b></td><td style="border-bottom: 1px solid"><b>Time Period</b></td><td style="border-bottom: 1px solid"><b>Genre(s)</b></td><td colspan="5" style="border-bottom: 1px solid" align="center"><b>Download</b></td><td style="border-bottom: 1px solid" align="center"><b>Source</b></td><td style="border-bottom: 1px solid" align="center"><b>Licence</b></td><td style="border-bottom: 1px solid" align="center"><b>Info</b></td>
+      </tr>
+      <tr>
+	<td></td><td></td><td></td><td align="center"><b>Text</b></td><td align="center"><b>Token</b></td><td align="center"><b>Norm</b></td><td align="center"><b>Anno</b></td><td align="center"><b>All</b></td><td></td><td></td><td></td>
+      </tr>
+      <tr>
+	<td><i>Dalin</i></td>
+	<td>1850&ndash;1853</td>
+	<td>lexicon</td>
+	<td align="center">[<a href="swedish/swedish-dalin-txt.zip">txt</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="swedish/swedish-dalin-anno.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-dalin-all.zip">all</a>]</td>
+	<td align="center"><a href="https://spraakbanken.gu.se/resurser/dalin" target="_blank">www</a></td>
+	<td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td>	
+	<td align="center">[<a href="swedish/swedish-readme-dalin" target="_blank">readme</a>]</td>
+      </tr>
+
+            <tr>
+	<td><i>EDGeS</i></td>
+	<td>1703&ndash;1917</td>
+	<td>bible</td>
+	<td align="center">[<a href="swedish/swedish-edges-txt.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-edges-tok.zip">tok</a>]</td>
+	<td align="center">&mdash;</td><td align="center">[<a href="swedish/swedish-edges-anno.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-edges-all.zip">all</a>]</td>
+	<td align="center"><a href="https://spraakbanken.gu.se/en/resources/openedges" target="_blank">www</a></td>
+	<td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td>	
+	<td align="center">[<a href="swedish/swedish-readme-edges" target="_blank">readme</a>]</td>
+      </tr>
+
+      <tr>
+	<td><i>Fornsvenska</i></td>
+	<td>1350&ndash;1758</td>
+	<td>mixed</td>
+	<td align="center">[<a href="swedish/swedish-fornsvenska-txt.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-fornsvenska-tok.zip">tok</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="swedish/swedish-fornsvenska-all.zip">all</a>]</td>
+	<td align="center"><a href="http://project2.sol.lu.se/fornsvenska/" target="_blank">www</a></td>
+	<td align="center"><a href="http://project2.sol.lu.se/fornsvenska/" target="_blank">www</a></td>
+	<td align="center">[<a href="swedish/swedish-readme-fornsvenska" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>GaW</i></td>
+	<td>1527&ndash;1812</td>
+	<td>court, church</td><td align="center">[<a href="swedish/swedish-GaW-txt.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-GaW-tok.zip">tok</a>]</td>
+	<td align="center">[<a href="swedish/swedish-GaW-norm.zip">txt</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="swedish/swedish-GaW-all.zip">all</a>]</td>
+	<td align="center"><a href="http://gaw.hist.uu.se/" target="_blank">www</a></td><td align="center">Free for research</td>
+	<td align="center">[<a href="swedish/swedish-readme-GaW" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>Gutenberg</i></td>
+	<td>1789&ndash;1902</td>
+	<td>books</td>
+	<td align="center">[<a href="swedish/swedish-gutenberg-txt.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-gutenberg-tok.zip">tok</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="swedish/swedish-gutenberg-all.zip">all</a>]</td>
+	<td align="center"><a href="http://www.gutenberg.org/" target="_blank">www</a></td>
+	<td align="center"><a href="http://www.gutenberg.org/license" target="_blank">www</a></td>
+	<td align="center">[<a href="swedish/swedish-readme-gutenberg" target="_blank">readme</a>]</td>
+      </tr>
+      <tr>
+	<td><i>Konsistoriet</i></td>
+	<td>1624&ndash;1699</td>
+	<td>protocols</td>
+	<td align="center">[<a href="swedish/swedish-konsistoriet-txt.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-konsistoriet-tok.zip">tok</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="swedish/swedish-konsistoriet-all.zip">all</a>]</td>
+	<td align="center"><a href="http://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1077219&dswid=4289" target="_blank">www</a></td>
+	<td align="center">Open Access</td>
+	<td align="center">[<a href="swedish/swedish-readme-konsistoriet" target="_blank">readme</a>]</td>
+      </tr>
+      
+      <tr>
+	<td><i>Schlyter</i></td>
+	<td>500&ndash;1500</td>
+	<td>lexicon</td>
+	<td align="center">[<a href="swedish/swedish-schlyter-txt.zip">txt</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="swedish/swedish-schlyter-anno.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-schlyter-all.zip">all</a>]</td>
+	<td align="center"><a href="https://spraakbanken.gu.se/resurser/schlyter" target="_blank">www</a></td>
+	<td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td>	
+	<td align="center">[<a href="swedish/swedish-readme-schlyter" target="_blank">readme</a>]</td>
+      </tr>
+
+      <tr>
+	<td><i>Swedberg</i></td>
+	<td>1700&ndash;1735</td>
+	<td>lexicon</td>
+	<td align="center">[<a href="swedish/swedish-swedberg-txt.zip">txt</a>]</td>
+	<td align="center">&mdash;</td>
+	<td align="center">&mdash;</td>
+	<td align="center">[<a href="swedish/swedish-swedberg-anno.zip">txt</a>]</td>
+	<td align="center">[<a href="swedish/swedish-swedberg-all.zip">all</a>]</td>
+	<td align="center"><a href="https://spraakbanken.gu.se/resurser/swedberg" target="_blank">www</a></td>
+	<td align="center"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">www</a></td>	
+	<td align="center">[<a href="swedish/swedish-readme-swedberg" target="_blank">readme</a>]</td>
+      </tr>
+
+    </table>
+
+<p>You may also download all Swedish corpora files (including readme files) here: <a href="swedish/all-swedish-corpora.zip">all-swedish-corpora.zip</a></p>
+  </div>
+</div>
+ 
+<br/><br/>
+<hr>
+For questions or comments, or if there are corpora that you would like to add to this page, don't hesitate to contact us:<br/><br/>
+<table>
+  <tr>
+    <td>Eva Pettersson,</td> <td>Department of Linguistics and Philology, Uppsala University, <a href="mailto:eva.pettersson@lingfil.uu.se">eva.pettersson@lingfil.uu.se</a></td>
+  </tr>
+  <tr>
+    <td>Beáta Megyesi,</td> <td>Department of Linguistics and Philology, Uppsala University, <a href="mailto:beata.megyesi@lingfil.uu.se">beata.megyesi@lingfil.uu.se</a></td>
+  </tr>
+</table>
+
+</div>
+
+</body>
+</html>
+
+
+
